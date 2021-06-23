@@ -66,10 +66,7 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Sequence - Login Unimed" sap:VirtualizedContainerService.HintSize="566,2238" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="s:String[]" Name="qtdArquivos" />
-      <Variable x:TypeArguments="x:String" Name="pastaDownload" />
       <Variable x:TypeArguments="x:String" Name="urlUnimed" />
-      <Variable x:TypeArguments="ui:Browser" Name="browser" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -189,7 +186,10 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="117b360f-3172-47b5-88c8-70761345d75a" InformativeScreenshot="311f88d0cc9963adf126d6984a5d3ba9" Selector="&lt;html app='chrome.exe' title='...::: Portal de Serviços PME - Central Nacional Unimed :::...' /&gt;&lt;webctrl id='frmTemp:goSair*' aaname='Sair' colName='Sair' innertext='Sair' /&gt;" TimeoutMS="4000">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="117b360f-3172-47b5-88c8-70761345d75a" InformativeScreenshot="311f88d0cc9963adf126d6984a5d3ba9" Selector="&lt;html app='chrome.exe' title='...::: Portal de Serviços PME - Central Nacional Unimed :::...' /&gt;&lt;webctrl id='frmTemp:goSair*' aaname='Sair' colName='Sair' innertext='Sair' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
                       <ui:Target.WaitForReady>
                         <InArgument x:TypeArguments="ui:WaitForReady" />
                       </ui:Target.WaitForReady>

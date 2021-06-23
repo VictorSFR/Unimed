@@ -4,11 +4,6 @@
   "main": "Main.xaml",
   "dependencies": {
     "RenameFile.Activities": "[1.0.4]",
-    "UiPath.Excel.Activities": "[2.9.5]",
-    "UiPath.IntelligentOCR.Activities": "[4.12.0-preview]",
-    "UiPath.Mail.Activities": "[1.9.5]",
-    "UiPath.OmniPage.Activities": "[1.7.0]",
-    "UiPath.PDF.Activities": "[3.3.0]",
     "UiPath.System.Activities": "[20.10.4]",
     "UiPath.UIAutomation.Activities": "[20.10.9]"
   },
@@ -16,7 +11,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.6.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,

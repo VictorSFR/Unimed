@@ -84,12 +84,10 @@
       <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
       <AssemblyReference>UiPath.OmniPage.Activities.Design</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="376,963" sap2010:WorkflowViewState.IdRef="Sequence_43">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="pastaDownload" />
       <Variable x:TypeArguments="ui:Browser" Name="browser" />
       <Variable x:TypeArguments="si:FileInfo" Name="arquivoDownload" />
       <Variable x:TypeArguments="x:String" Name="valorBoleto" />
@@ -113,25 +111,15 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DownloadBoleto workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Unimed\DownloadBoleto.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="ui:Browser" x:Key="in_Browser">
-          <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="browser" />
-        </InArgument>
-        <OutArgument x:TypeArguments="si:FileInfo" x:Key="out_ArquivoDownload">
-          <mva:VisualBasicReference x:TypeArguments="si:FileInfo" ExpressionText="arquivoDownload" />
-        </OutArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_ValorBoleto">
-          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="valorBoleto" />
-        </OutArgument>
+        <InArgument x:TypeArguments="ui:Browser" x:Key="in_Browser">[browser]</InArgument>
+        <OutArgument x:TypeArguments="si:FileInfo" x:Key="out_ArquivoDownload">[arquivoDownload]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_ValorBoleto">[valorBoleto]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Tratamento_de_Arquivos workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Unimed\Tratamento_de_Arquivos.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="si:FileInfo" x:Key="in_arquivoDownload">
-          <mva:VisualBasicValue x:TypeArguments="si:FileInfo" ExpressionText="arquivoDownload" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_ValorBoleto">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="valorBoleto" />
-        </InArgument>
+        <InArgument x:TypeArguments="si:FileInfo" x:Key="in_arquivoDownload">[arquivoDownload]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ValorBoleto">[valorBoleto]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
