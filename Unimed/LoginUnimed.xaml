@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,2403</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>717,2403</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sequence_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="56">
@@ -164,10 +164,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3021351-09cf-44b0-8303-0cce75767f3b" InformativeScreenshot="25c6771212ff7fab8330217a598a02d9" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin*' title='Restaurar páginas?' /&gt;&lt;ctrl name='Restaurar páginas?' role='dialog' /&gt;&lt;ctrl name='Fechar' role='push button' aastate='focalizável' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3021351-09cf-44b0-8303-0cce75767f3b" InformativeScreenshot="25c6771212ff7fab8330217a598a02d9" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin*' title='Restaurar páginas?' /&gt;&lt;ctrl name='Restaurar páginas?' role='dialog' /&gt;&lt;ctrl name='Fechar' role='push button' aastate='focalizável' /&gt;" TimeoutMS="5000">
                       <ui:Target.WaitForReady>
                         <InArgument x:TypeArguments="ui:WaitForReady" />
                       </ui:Target.WaitForReady>
@@ -186,10 +183,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="117b360f-3172-47b5-88c8-70761345d75a" InformativeScreenshot="311f88d0cc9963adf126d6984a5d3ba9" Selector="&lt;html app='chrome.exe' title='...::: Portal de Serviços PME - Central Nacional Unimed :::...' /&gt;&lt;webctrl id='frmTemp:goSair*' aaname='Sair' colName='Sair' innertext='Sair' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="117b360f-3172-47b5-88c8-70761345d75a" InformativeScreenshot="311f88d0cc9963adf126d6984a5d3ba9" Selector="&lt;html app='chrome.exe' title='...::: Portal de Serviços PME - Central Nacional Unimed :::...' /&gt;&lt;webctrl id='frmTemp:goSair*' aaname='Sair' colName='Sair' innertext='Sair' /&gt;" TimeoutMS="5000">
                       <ui:Target.WaitForReady>
                         <InArgument x:TypeArguments="ui:WaitForReady" />
                       </ui:Target.WaitForReady>
